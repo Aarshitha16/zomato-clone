@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <link rel="stylesheet" href="./style.css"/> 
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        >
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet"/>
+
+    <title>zomato clone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="assets/logo.png" class="brand__logo" />
+            </div>
+            <div class="navbar__nav__items">
+                <div class="nav__item">
+                    <button class="primary__button"> Order Food</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero__container">
+            <div class="hero__image__container">
+                <img src="./assets/hero.jpg" alt="hero image" class="hero__image" />
+
+                <img src="assets/svg/heroShape.svg" alt="hero image shape" class="hero__image__shape" />
+
+                <img src="assets/svg/herobgpattren.svg" alt="hero image pattern" class="hero__image__pattern" />
+            </div>
+
+            <div class="hero__description">
+                <h1 class="text__heading">Order food from your favorite restraunts near you</h1>
+                <button class="primary__button">Order now</button>
+            </div>
+        </section>
+
+        <section class="video__footage__container">
+            <div class="video__footage">
+                <iframe
+                    src="https://player.vimeo.com/video/323795266" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    class="chef__video"></iframe>
+            </div>
+
+            <div class="video__footage__text">
+                <p>Your food will be prepared safely with an experienced chef,
+                    without compromising on the quality and hygiene.</p>
+            </div>
+        </section>
+
+        <section class="food__list__container">
+            <h1 class="text__heading" style="text-align: center;">Explore Our Menu</h1>
+
+            <div class="food__list__container__diagonal"></div>
+            <!--cardlist-->
+            <div class="food__menu__card__list">
+                <!--card1-->
+                <div class="food__menu__card">
+                    <img src="./assets/burger.jpg" alt="burger image" class="food__menu__card__image" />
+                    <div class="food__menu__card__description">
+                        <h4 class="food__menu__card__title">Burgers </h4>
+                        <p class="food__menu__card__restaurants">
+                            Burger King, Mcdonalds, Burger Place <span style="color: red;">+3 </span>
+                        </p>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="food__menu__card">
+                    <img src="./assets/pizza.jpg" alt="pizza image" class="food__menu__card__image" />
+
+                    <div class="food__menu__card__description">
+                        <h4 class="food__menu__card__title">pizza </h4>
+                        <p class="food__menu__card__restaurants">
+                            Dominos, Mcdonalds, pizzahut <span style="color: red;">+3 </span>
+                        </p>
+                    </div>
+                </div>
+
+                <!--card3-->
+
+                <div class="food__menu__card">
+                    <img src="./assets/iceCream.jpg" alt="ice cream image" class="food__menu__card__image" />
+                    <div class="food__menu__card__description">
+                        <h4 class="food__menu__card__title">Ice Cream</h4>
+                        <p class="food__menu__card__restaurants">
+                            Ibaco, kwality walls <span style="color: red;">+3 </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurant__list__container">
+            <div class="restaurant__list__text">
+                <h1 class="text__heading">Order from 100s of restaurants</h1>
+            </div>
+            <div class="restaurant__list__image__container">
+
+                <div class="restaurant__list__row__1">
+                    <img src="./assets/restaurant1.jpg" alt="restaurant1" class="restaurant1" />
+                    <img src="./assets/restaurant2.jpg" alt="restaurant2" class="restaurant2" />
+                </div>
+
+                <div class="restaurant__list__row__2">
+                    <img src="./assets/restaurant3.jpg" alt="restaurant3" class="restaurant3" />
+                    <img src="./assets/restaurant4.jpg" alt="restaurant4" class="restaurant4" />
+                </div>
+
+            </div>
+        </section>
+
+          <section class="email__subscribe__container">
+                   <div>
+                       <h1 class="text__heading"> Stay Updated</h1>
+                       <div class="email__subscribe__input__field">
+                           <div>
+                                <input type="email" placeholder="xyz@email.com" class="email__input" />
+                           </div>
+                           <button class="primary__button">Get Updates</button>
+                       </div>
+                   </div>
+          </section>
+
+          <section class="image__quote__container">
+              <div class="image__overlay"></div>
+              <h3 class="image__quote__text">
+                  When  a  man's  stomach  is  full  it  makes  no  difference  whether  he  is  rich  or  poor.
+              </h3>
+          </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="./assets/logo.png" alt="footer logo image" class="footer__logo__image" />
+            </div>
+            <div class="footer__ul__list">
+            <ul>
+                <li>Pricing</li>
+                <li>Terms & conditions</li>
+                <li>Partnership</li>
+                <li>Career</li>
+                <li>Contact</li>
+            </ul>
+          </div>  
+        </footer>
+</body>
+
+</html>
