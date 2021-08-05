@@ -15,16 +15,15 @@ body {
 button {
     background-color: transparent;
     border: none;
-    cursor: pointer;
 }
 
 section {
-    margin-top: 2px 0 ;
+    margin: 20px 0 ;
 
 }
 
 .container {
-    width: 100;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -39,7 +38,7 @@ section {
     padding: 0 20px;
     z-index: 9999;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(236, 208, 208, 0.05);
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .brand__logo {
@@ -60,7 +59,8 @@ section {
     background-size: 200% auto;
     font-family:'Dancing Script', cursive;
     font-weight: bold;
-    font-size: x-large;
+    font-size: larger;
+    cursor: pointer;
 }
 
 .primary__button:hover {
@@ -78,7 +78,7 @@ section {
     position: absolute;
     width: 100%;
     right: auto;
-    left: left;
+    left: auto;
     z-index: 3;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -92,7 +92,7 @@ section {
 .hero__description {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     align-items: flex-start;
 }
 
@@ -102,7 +102,8 @@ section {
     font-weight: bold;
     color: #1d3557;
     font-family: 'Dancing Script', cursive;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    /* text-align: center; */
 }
 
 .video__footage__container {
@@ -121,8 +122,8 @@ section {
 
 .video__footage::before {
     content: "";
-     background-image: linear-gradient(to right, #d542e2 0%, #5db3ec 51%, #cc2e9d 100%);
-     position: absolute;
+    background-image: linear-gradient(to right, #d542e2 0%, #5db3ec 51%, #cc2e9d 100%);
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -163,7 +164,7 @@ section {
 
 .food__menu__card__image {
     width: 100%;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0 0;
 }
 
 .food__menu__card__title {
@@ -230,6 +231,8 @@ section {
     align-items: center;
    flex-direction: column;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .email__subscribe__input__field {
@@ -255,15 +258,16 @@ section {
 
 .image__quote__container {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 4rem 0;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 200px;
     width: 100%;
-    margin-bottom: 2rem;
-    border-radius: 12px;
+    /* margin-left: 2rem;
+    margin-bottom: 2rem; */
+    border-radius: 15 px;
     background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=c) 
     center center / cover no-repeat;
 }
@@ -272,27 +276,29 @@ section {
     position: absolute;
     height: 200px;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 13px;
     opacity: 49%;
     background-color: #0a4065;
 }
 
 .image__quote__text {
     color: #fff;
-    z-index: 3;
-    margin: 0 1rem;
+    z-index: 100;
+    margin: 20px;
     font-family:'Dancing Script', cursive ;
     text-align: center;
     font-size: 1.8rem;
+    font-weight: 400;
 }
 
   
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin: 30px -5px 0 -5px;
+    justify-content: space-around;
     border-radius: 1rem 1rem 0 0;
     background-image: linear-gradient(to right, #d542e2 0%, #5db3ec 51%, #cc2e9d 100%);
 }
@@ -389,9 +395,14 @@ footer {
     .email__input {
         margin: 0.8rem;
     }
+    .image__quote__container {
+        border-radius: 13px;
+    }
 
     .footer {
         margin-top: 1rem;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
@@ -413,15 +424,16 @@ footer {
 
     .primary__button {
         font-size: 20px;
-        padding: 15px 20px;
+        padding: 1rem 2rem;
         font-weight: bold;
         font-size: x-large;
     }
 
     .text__heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 3.4rem;
         font-family:'Dancing Script', cursive;
+
     }
 
     .video__footage__text {
@@ -453,34 +465,37 @@ footer {
     }
 
     .email__input {
-        border: 1px solid #ee89a0 ;
+    border: 1px solid #ee89a0 ;
     background-color: #fcedf0;
     color: #1d3557;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.9rem;
     border-radius: 4px;
+    width: 300px;
     }
 
     .image__quote__container { 
        height: 350px;
         background-color: #0a4065;
+        border-radius: 13px ;
     }
 
     .image__overlay {
         height: 350px;
+        border-radius: 13px;
     }
 
     .image__quote__text {
         color: #fff;
-        margin: 0 1rem;
+        margin: 40px;
         text-align: center;
         font-size: 2.8rem;
         font-weight: 500;
         line-height: 1.2;
     }
 
-    footer {
-        margin-top: 3rem;
+    .footer {
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
